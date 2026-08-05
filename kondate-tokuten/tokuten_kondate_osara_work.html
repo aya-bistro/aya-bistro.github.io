@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>お皿の設計図｜塗ってみるワーク｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:720px;margin:0 auto;padding:36px 16px 70px}
+  .sheet{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:48px 34px 40px;box-shadow:0 10px 40px rgba(55,48,31,.08);margin-bottom:26px}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:31px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:30px auto 0;max-width:30em}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:22px;font-weight:700;margin:4px 0 8px;letter-spacing:.06em}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+  .sec{margin-top:46px}
+  .rule3{display:grid;gap:10px;margin-top:6px}
+  .r{display:flex;gap:14px;align-items:flex-start;background:var(--creambox);border-radius:16px;padding:16px 20px}
+  .r .n{flex:0 0 40px;height:40px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);
+    font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+  .r .t{font-size:16.5px;font-weight:700}
+  .r small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:2px}
+  .plates{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:24px}
+  .pl{text-align:center}
+  .plcap{font-size:14.5px;color:var(--sub);margin-top:6px}
+  .work{display:grid;gap:34px;margin-top:24px}
+  .wrow{display:grid;grid-template-columns:1fr 210px;gap:22px;align-items:center;
+    border:1px solid #EFE7D7;border-radius:18px;padding:20px 22px}
+  .wlabel{font-size:15px;color:var(--gold);font-weight:700;letter-spacing:.1em}
+  .line{border-bottom:1px solid #DCD3C2;height:34px;margin-top:10px}
+  .chips{display:flex;gap:10px;margin-top:16px}
+  .chip{flex:1;text-align:center}
+  .chipbox{height:52px;border:1px solid #DCD3C2;border-radius:10px;background:#fff}
+  .chipname{font-size:13px;color:var(--sub);margin-top:6px}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:22px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:44px;background:var(--creambox);border-radius:20px;padding:32px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:10px}
+  .ctabox p{font-size:16px;margin-bottom:20px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:19px 42px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:30px;letter-spacing:.2em}
+  .printnote{text-align:center;font-size:14px;color:var(--sub);margin:0 0 18px}
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0;max-width:none}
+    .sheet{box-shadow:none;border-radius:0;border:none;border-top:3px solid var(--gold);
+      margin:0;padding:0 0 10mm;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}
+    .printnote,.ctabox{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 1枚目：説明とお手本 -->
+  <div class="sheet">
+    <p class="eyebrow">Aya Chef — Le Plan de l'Assiette</p>
+    <h1>お皿の設計図</h1>
+    <p class="h1sub">読むのではなくて、塗ってみるワークです</p>
+    <div class="h1rule"></div>
+    <p class="printnote">※ このページは印刷して使ってください（A4・色鉛筆をご用意ください）</p>
+
+    <p class="lead">
+      「今日のごはん、なんだか茶色いな」と思ったこと、ありませんか。<br>
+      あれは料理が下手なのではなくて、色の数が足りないだけなんです。<br>
+      本を読むより、いちど塗ってみるほうが早いので、シートを作りました。<br>
+      色鉛筆を3本だけ持ってきてくださいね。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>ルールは3つだけ</h2>
+      <div class="secline"></div>
+      <div class="rule3">
+        <div class="r"><div class="n">1</div><div><p class="t">まん中に、茶色をひとつ塗る</p><small>お肉やお魚のことです。焼いたものは、だいたい茶色になりますよね</small></div></div>
+        <div class="r"><div class="n">2</div><div><p class="t">そのとなりに、ちがう色をふたつ足す</p><small>にんじんのオレンジ、クレソンの緑。この2色でいいんです</small></div></div>
+        <div class="r"><div class="n">3</div><div><p class="t">白いところを、少し残す</p><small>お皿が全部うまっていると、詰まって見えます。余白も料理のうちなんです</small></div></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>お手本を見てみましょう</h2>
+      <div class="secline"></div>
+      <div class="plates">
+        <div class="pl">
+          <svg viewBox="0 0 240 240" width="100%" role="img" aria-label="茶色だけのお皿">
+            <circle cx="120" cy="120" r="112" fill="#fff" stroke="#DCD3C2" stroke-width="2"/>
+            <circle cx="120" cy="120" r="92" fill="none" stroke="#EFE7D7" stroke-width="1.5"/>
+            <ellipse cx="120" cy="122" rx="52" ry="34" fill="#9A6B45"/>
+            <ellipse cx="120" cy="112" rx="34" ry="20" fill="#B07C50"/>
+          </svg>
+          <p class="plcap">茶色だけ。おいしそうですが、少しさみしい</p>
+        </div>
+        <div class="pl">
+          <svg viewBox="0 0 240 240" width="100%" role="img" aria-label="茶色1とカラフル2のお皿">
+            <circle cx="120" cy="120" r="112" fill="#fff" stroke="#DCD3C2" stroke-width="2"/>
+            <circle cx="120" cy="120" r="92" fill="none" stroke="#EFE7D7" stroke-width="1.5"/>
+            <ellipse cx="112" cy="128" rx="48" ry="31" fill="#9A6B45"/>
+            <ellipse cx="112" cy="119" rx="31" ry="18" fill="#B07C50"/>
+            <path d="M150 92 q22 -12 34 6 q-18 20 -38 12 z" fill="#E08A3C"/>
+            <path d="M78 84 q-20 6 -18 26 q22 4 32 -14 z" fill="#7A8471"/>
+            <circle cx="164" cy="140" r="9" fill="#B23A48"/>
+          </svg>
+          <p class="plcap">茶色1つ＋オレンジ＋緑。同じ料理が、ごちそうに見えます</p>
+        </div>
+      </div>
+      <div class="memo">
+        <b>おもしろいのは、味も勝手に整うこと</b><br>
+        色を足そうとすると、自然と野菜が増えます。<br>
+        栄養のことを考えなくても、色を見ているだけで整っていくんですよね。<br>
+        だから「考えなくていい」んです。色が教えてくれます。
+      </div>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+  <!-- 2枚目：ワークシート -->
+  <div class="sheet">
+    <p class="eyebrow">Work Sheet</p>
+    <h1>塗ってみましょう</h1>
+    <p class="h1sub">今週作った献立を、3日分</p>
+    <div class="h1rule"></div>
+
+    <div class="work">
+      <div class="wrow">
+        <div>
+          <p class="wlabel">1日目</p>
+          <p style="font-size:15px;color:#7A7060">つくった料理</p>
+          <div class="line"></div>
+          <div class="chips">
+            <div class="chip"><div class="chipbox"></div><p class="chipname">茶色</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 1</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 2</p></div>
+          </div>
+        </div>
+        <svg viewBox="0 0 240 240" width="210" role="img" aria-label="塗る用のお皿1">
+          <circle cx="120" cy="120" r="112" fill="#fff" stroke="#DCD3C2" stroke-width="2"/>
+          <circle cx="120" cy="120" r="92" fill="none" stroke="#EFE7D7" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <div class="wrow">
+        <div>
+          <p class="wlabel">2日目</p>
+          <p style="font-size:15px;color:#7A7060">つくった料理</p>
+          <div class="line"></div>
+          <div class="chips">
+            <div class="chip"><div class="chipbox"></div><p class="chipname">茶色</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 1</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 2</p></div>
+          </div>
+        </div>
+        <svg viewBox="0 0 240 240" width="210" role="img" aria-label="塗る用のお皿2">
+          <circle cx="120" cy="120" r="112" fill="#fff" stroke="#DCD3C2" stroke-width="2"/>
+          <circle cx="120" cy="120" r="92" fill="none" stroke="#EFE7D7" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <div class="wrow">
+        <div>
+          <p class="wlabel">3日目</p>
+          <p style="font-size:15px;color:#7A7060">つくった料理</p>
+          <div class="line"></div>
+          <div class="chips">
+            <div class="chip"><div class="chipbox"></div><p class="chipname">茶色</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 1</p></div>
+            <div class="chip"><div class="chipbox"></div><p class="chipname">色 2</p></div>
+          </div>
+        </div>
+        <svg viewBox="0 0 240 240" width="210" role="img" aria-label="塗る用のお皿3">
+          <circle cx="120" cy="120" r="112" fill="#fff" stroke="#DCD3C2" stroke-width="2"/>
+          <circle cx="120" cy="120" r="92" fill="none" stroke="#EFE7D7" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="memo">
+      <b>3日ぶん塗ってみて、どうでしたか</b><br>
+      緑がひとつも出てこなかった方、多いと思います。私もそうでした。<br>
+      次の買い物のときに、緑のものをひとつだけかごに入れてみてください。<br>
+      クレソンでも、春菊でも、パセリでもいいんです。それだけで食卓が変わります。
+    </div>
+
+    <div class="ctabox">
+      <p class="leaf">❦</p>
+      <p>塗ったシートを見せていただけたら、うれしいです。<br>
+      盛り付けの添削や、毎月のレッスンは<br>オンライン料理教室でお届けしています。</p>
+      <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>今日の2皿、決めます｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC; --green:#7A8471;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:640px;margin:0 auto;padding:40px 16px 80px}
+  .card{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:50px 28px 42px;box-shadow:0 10px 40px rgba(55,48,31,.08)}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:32px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:28px auto 0;max-width:28em;text-align:center}
+
+  .btns{display:grid;gap:12px;margin-top:34px}
+  button.pick{font-family:inherit;font-size:19px;font-weight:700;letter-spacing:.08em;
+    background:#fff;color:var(--ink);border:1px solid var(--goldsoft);border-radius:18px;
+    padding:22px 18px;cursor:pointer;transition:.15s;box-shadow:0 3px 12px rgba(55,48,31,.05);
+    display:flex;align-items:center;gap:16px;text-align:left;line-height:1.7}
+  button.pick:hover{border-color:var(--gold);transform:translateY(-1px);box-shadow:0 8px 22px rgba(55,48,31,.1)}
+  button.pick .ic{flex:0 0 44px;height:44px;border-radius:50%;border:1px solid var(--gold);
+    color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:19px;
+    font-family:"Cormorant Garamond",serif;font-style:italic}
+  button.pick small{display:block;font-size:13.5px;color:var(--sub);font-weight:500;letter-spacing:.02em}
+
+  .result{margin-top:34px;background:var(--creambox);border-radius:20px;padding:34px 24px;display:none}
+  .result.on{display:block;animation:fade .45s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .rtag{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:17px;color:var(--gold);letter-spacing:.16em;margin-bottom:14px}
+  .dish{text-align:center;font-size:23px;font-weight:700;line-height:1.75}
+  .plus{text-align:center;color:var(--gold);font-size:19px;margin:8px 0}
+  .side{text-align:center;font-size:20px;font-weight:700;color:var(--bordeaux);line-height:1.75}
+  .why{margin-top:22px;background:#fff;border-radius:14px;padding:18px 20px;font-size:15.5px;line-height:1.9}
+  .why b{color:var(--bordeaux);font-weight:700}
+  .chap{text-align:center;font-size:14px;color:var(--sub);margin-top:16px;letter-spacing:.08em}
+  .again{display:block;margin:22px auto 0;font-family:inherit;font-size:16px;font-weight:700;
+    background:var(--bordeaux);color:#fff;border:none;border-radius:999px;padding:16px 38px;
+    cursor:pointer;letter-spacing:.08em;box-shadow:0 8px 22px rgba(140,90,90,.3)}
+  .again:hover{opacity:.94}
+
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:44px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:40px;background:var(--creambox);border-radius:20px;padding:32px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:10px}
+  .ctabox p{font-size:16px;margin-bottom:20px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:19px 42px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:32px;letter-spacing:.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">Aya Chef — Le Menu du Jour</p>
+    <h1>今日の2皿、<br>決めます</h1>
+    <p class="h1sub">押すだけです。登録も、何も要りません</p>
+    <div class="h1rule"></div>
+
+    <p class="lead">
+      冷蔵庫の前で立ち尽くす時間が、いちばん疲れるんですよね。<br>
+      今の気分にいちばん近いものを、ひとつ押してみてください。
+    </p>
+
+    <div class="btns">
+      <button class="pick" data-mode="meat"><span class="ic">I</span>
+        <span>お肉の気分<small>しっかり食べたい日に</small></span></button>
+      <button class="pick" data-mode="fish"><span class="ic">II</span>
+        <span>お魚の気分<small>軽く、でもちゃんと食べたい日に</small></span></button>
+      <button class="pick" data-mode="tired"><span class="ic">III</span>
+        <span>今日は、疲れています<small>火を使う時間が短いものだけ出します</small></span></button>
+    </div>
+
+    <div class="result" id="result">
+      <p class="rtag">Ce Soir</p>
+      <p class="dish" id="dish"></p>
+      <p class="plus">＋</p>
+      <p class="side" id="side"></p>
+      <div class="why"><b>なぜこの組み合わせか</b><br><span id="why"></span></div>
+      <p class="chap" id="chap"></p>
+      <button class="again" id="again">もういちど引く</button>
+    </div>
+
+    <div class="memo">
+      <b>迷ったときは、引いたものでいいんです</b><br>
+      献立を決めるのに時間をかけても、おいしさは変わりません。<br>
+      それより、決まった時間で作り始めたほうが、気持ちがずっと楽なんですよね。<br>
+      今日は1皿だけでも十分ですよ。
+    </div>
+
+    <div class="ctabox">
+      <p class="leaf">❦</p>
+      <p>「なぜそうするのか」までわかると、<br>レシピを見なくても作れるようになります。<br>
+      毎月の献立とライブレッスンは、<br>オンライン料理教室でお届けしています。</p>
+      <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  meat: [
+    {d:"照り焼きガーリックレモンチキン", s:"きのこのバター醤油ごはん", w:"塩麹と片栗粉でカリッと焼いて、バター醤油のタレをからめます。ごはんは炊飯器にセットしておくだけなので、手を動かすのは6分ほどです。", c:"第1章"},
+    {d:"マリーミーチキン", s:"春菊とりんごのサラダ", w:"ドライトマトとパルメザンの濃くなったソースに、春菊の苦みとりんごの酸味を合わせます。重いものと軽いものを並べると、最後まで飽きません。", c:"第1章"},
+    {d:"豚ロースのマスタードロール", s:"さつまいものポタージュ", w:"こんがりした肉と、なめらかなスープ。食感に差をつけると、2皿でもちゃんと献立になります。", c:"第1章"},
+    {d:"ポークチョップ 白味噌バターソース", s:"焼きかぶの梅マリネ", w:"白味噌はフレンチのソースになります。日本の冷蔵庫にあるものでフレンチを作る、この本の考え方そのものです。", c:"第1章"},
+    {d:"豚こまバルサミコロール", s:"カリフラワーのピューレ", w:"甘酸っぱい肉と、白いピューレ。茶色と白のコントラストで、お皿が締まって見えます。", c:"第1章"},
+    {d:"牛肉のタリアータ風 赤ワインバターソース", s:"いちじくのブラータ風サラダ", w:"特別な日の2皿です。牛肉は両面を強火で30秒ずつ焼いて、5分休ませるだけ。余熱でちょうどよく仕上がります。", c:"第1章"},
+    {d:"コルドンブルー", s:"切り干し大根のコンソメ風", w:"洋の揚げ物に、和の汁もの。この組み合わせはこの本だけだと思います。切り干し大根はコンソメでもおいしいんです。", c:"第1章"},
+    {d:"ミニ煮込みハンバーグ クリームソース", s:"ポムピューレ", w:"小さく作るほど早く火が通って、焼き目が全面につきます。大きいハンバーグより失敗しません。", c:"第1章"},
+    {d:"豚ロースの山椒バター焼き", s:"たけのこと木の芽のごはん", w:"山椒の香りは油に溶けるので、バターで焼くと香りが広がります。ごはんは炊飯器にお任せで。", c:"第1章"},
+    {d:"ハーブオイルからあげ ローズマリータルタル", s:"そうめんのタブレ風", w:"ハーブの香りを移した油で揚げるので、鶏そのものが香ります。タルタルにはケッパーとアンチョビを。", c:"第1章"},
+    {d:"キャベツと豚肉の白ワイン煮込み", s:"ちくわのアヒージョ風", w:"白ワインの酸がキャベツをやわらかくして、甘みを引き出します。煮ているあいだに副菜が作れます。", c:"第1章"},
+    {d:"焼きポトフ", s:"お麩のバター焼き", w:"肉と野菜に先に焼き目をつけてから煮ます。香ばしさがそのままスープに移ります。", c:"第1章"},
+    {d:"ホタテのポワレ 焦がしバター", s:"カリフラワーのソテー（同じフライパンで）", w:"ホタテを焼いた脂でカリフラワーを炒めます。別々に作るより甘くなりますし、洗い物もひとつです。", c:"第3章"}
+  ],
+  fish: [
+    {d:"白身魚のムニエル", s:"アスパラのオランデーズ", w:"どちらもバターを乳化させて作ります。同じ技法で2皿できるので、実は手数が少ないんです。", c:"第1章"},
+    {d:"鯛のポワレ ブールブラン", s:"大葉とじゃこのレモンごはん", w:"繊細な鯛に、白ワインの酸のソース。ごはんを和に寄せると、全体がすっと締まります。", c:"第1章"},
+    {d:"鯖のムニエル 醤油マスタード", s:"プチトマトと大葉のマリネ", w:"醤油のうまみとマスタードの酸味が重なります。青魚こそフレンチの技法が効きます。", c:"第1章"},
+    {d:"サーモンレアカツ", s:"ひじきとオリーブのデリサラダ", w:"表面を1分焼いて、余熱で2分。中はしっとりのままです。サラダは前の日に作っておけます。", c:"第1章"},
+    {d:"鮭のクリーム煮", s:"餃子の皮のキッシュ", w:"どちらも弱火なので、同時に進められます。生クリームは沸騰させないでくださいね。", c:"第1章"},
+    {d:"海老のクルスティヤン", s:"水菜とオレンジのサラダ", w:"春巻きの皮を細く切って巻くと、すき間から油が入って全面がサクサクになります。見た目がいちばんフレンチです。", c:"第1章"},
+    {d:"アクアパッツァ風 鯛とトマト", s:"お麩のガーリックバター焼き", w:"水を入れすぎないのがコツです。魚とトマトの水分だけで、味が濃く仕上がります。", c:"第1章"},
+    {d:"塩レモンのお魚フリット 大葉添え", s:"プチトマトと大葉のマリネ", w:"揚げものと生の野菜。重いものと軽いものを並べると、最後まで気持ちよく食べられます。", c:"第1章"}
+  ],
+  tired: [
+    {d:"大葉ジェノベーゼのそうめん", s:"クリームチーズ × 漬物", w:"茹でて和えるだけです。副菜は切って並べるだけ。疲れた日に頑張らなくていいんです。", c:"第1章"},
+    {d:"冷凍うどんでビスク風うどん", s:"塩レモンピール添え", w:"冷凍うどんがあれば5分です。ビスクのコクで、手抜きに見えません。", c:"第1章"},
+    {d:"炭酸カルボナーラ", s:"グレープフルーツとナッツの白和え", w:"炭酸で茹でると麺がつるっとします。白和えは混ぜるだけです。", c:"第1章"},
+    {d:"炊飯器でチキントマトライス", s:"半熟卵とみょうがのサラダ ごまドレ", w:"炊飯器に入れて放っておくだけ。帰ってきたら卵をゆでるだけです。", c:"第1章"},
+    {d:"タコとモッツァレラの春菊サラダ", s:"大根とツナのわさびマリネ", w:"火を使いません。切って和えるだけの日があっていいと思います。", c:"第1章"},
+    {d:"エビアボカドのチーズリゾット", s:"セロリのレムラード", w:"リゾットは混ぜているだけで作れます。立ったまま作れるのが、疲れた日にはありがたいんです。", c:"第1章"},
+    {d:"野菜のテリーヌ（週末に作ったもの）", s:"バゲット ＋ エスカルゴバター", w:"土曜に作ってあれば、切って出すだけです。これが週末デリのいちばんの効きどころです。", c:"第2章"},
+    {d:"塩鮭のブランダード（作り置き）", s:"水菜とオレンジのサラダ", w:"パンに塗るだけ、グラタンにして焦がすだけ。作り置きが冷蔵庫にある日は、5分で食卓が整います。", c:"第2章"}
+  ]
+};
+
+let last = "";
+let mode = "meat";
+
+function draw(m){
+  mode = m;
+  const list = DATA[m];
+  let pick;
+  let guard = 0;
+  do { pick = list[Math.floor(Math.random()*list.length)]; guard++; }
+  while (pick.d === last && list.length > 1 && guard < 12);
+  last = pick.d;
+
+  document.getElementById("dish").textContent = pick.d;
+  document.getElementById("side").textContent = pick.s;
+  document.getElementById("why").textContent = pick.w;
+  document.getElementById("chap").textContent = "本の " + pick.c + " にのっています";
+  const r = document.getElementById("result");
+  r.classList.remove("on");
+  void r.offsetWidth;
+  r.classList.add("on");
+  r.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+document.querySelectorAll("button.pick").forEach(b=>{
+  b.addEventListener("click", ()=> draw(b.dataset.mode));
+});
+document.getElementById("again").addEventListener("click", ()=> draw(mode));
+</script>
+</body>
+</html>

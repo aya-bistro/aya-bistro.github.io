@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>1週間の買い物リストと、段取りカレンダー｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.05;letter-spacing:.04em}
+  .wrap{max-width:640px;margin:0 auto;padding:40px 16px 80px}
+  .card{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:52px 30px 44px;box-shadow:0 10px 40px rgba(55,48,31,.08)}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:32px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:24px auto 0;border-radius:2px}
+  .hero{margin:34px -10px 0;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(55,48,31,.16)}
+  .hero img{width:100%;height:340px;object-fit:cover;object-position:center 60%;display:block}
+  .heronote{font-size:13.5px;color:var(--sub);text-align:center;margin-top:12px}
+  .lead{margin:34px auto 0;font-size:17px;max-width:30em}
+  .sec{margin-top:56px}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:23px;font-weight:700;margin:4px 0 8px;letter-spacing:.06em}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+  .week{display:grid;gap:10px}
+  .day{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #F0EADD;
+    border-radius:16px;padding:16px 18px;box-shadow:0 2px 10px rgba(55,48,31,.04)}
+  .day:nth-child(odd){background:var(--creambox);border-color:transparent}
+  .badge{flex:0 0 44px;height:44px;border:1px solid var(--gold);border-radius:50%;
+    color:var(--gold);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center;margin-top:4px}
+  .badge.sat{background:var(--gold);color:#fff}
+  .day .t{font-size:16.5px;font-weight:700;line-height:1.85}
+  .day small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:4px;line-height:1.9}
+  .shop{display:grid;gap:10px}
+  .srow{display:flex;gap:14px;align-items:flex-start;background:var(--creambox);border-radius:16px;padding:16px 20px}
+  .slabel{flex:0 0 82px;color:var(--gold);font-weight:700;font-size:15.5px;line-height:1.9}
+  .sbody{font-size:16px;line-height:1.95}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:20px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:60px;background:var(--creambox);border-radius:20px;padding:34px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:12px}
+  .ctabox p{font-size:16px;margin-bottom:22px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:20px 44px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .btn:hover{opacity:.95}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:36px;letter-spacing:.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">Aya Chef — Une Semaine</p>
+    <h1>1週間の買い物リストと、<br>段取りカレンダー</h1>
+    <p class="h1sub">土曜に1回買って、30分だけ仕込む</p>
+    <div class="h1rule"></div>
+
+    <div class="hero"><img src="assets/hero_salmon.jpg" alt="鮭のクリーム煮"></div>
+    <p class="heronote">火曜の鮭のクリーム煮。生クリームは煮立てないでくださいね、分離してしまうので</p>
+
+    <p class="lead">
+      献立でいちばん疲れるのは、作ることではなくて「決めること」なんですよね。<br>
+      なので、1週間ぶんを先に決めてしまいました。<br>
+      買い物は土曜に1回だけ。仕込みも土曜の30分だけです。<br>
+      あとは、書いてあるとおりに作るだけで平日が終わります。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>1週間の段取りカレンダー</h2>
+      <div class="secline"></div>
+      <div class="week">
+        <div class="day"><div class="badge sat">土</div><div><p class="t">買い物1回と、仕込み30分</p><small>下のリストのとおりに買って、ポタージュを1つ作って冷蔵庫へ。これだけで平日の自分が助かります</small></div></div>
+        <div class="day"><div class="badge">月</div><div><p class="t">照り焼きガーリックレモンチキン<br>＋ きのこのバター醤油ごはん</p><small>朝に炊飯器をセットしておくだけ。帰ってきたら焼くだけです</small></div></div>
+        <div class="day"><div class="badge">火</div><div><p class="t">鮭のクリーム煮<br>＋ 餃子の皮のキッシュ</p><small>同じフライパンで2品。生クリームは煮立てないのがコツ</small></div></div>
+        <div class="day"><div class="badge">水</div><div><p class="t">豚ロースのマスタードロール<br>＋ さつまいものポタージュ</p><small>スープは土曜に作ってあるので、温めるだけ</small></div></div>
+        <div class="day"><div class="badge">木</div><div><p class="t">鯛のポワレ ブールブラン<br>＋ 大葉とじゃこのレモンごはん</p><small>白ワインを煮詰めて、冷たいバターを入れて混ぜる。それだけでフレンチのソースです</small></div></div>
+        <div class="day"><div class="badge">金</div><div><p class="t">大葉ジェノベーゼのそうめん<br>＋ クリームチーズと漬物</p><small>金曜は麺の日。疲れた日に頑張らなくていいんです</small></div></div>
+        <div class="day"><div class="badge">日</div><div><p class="t">お休み、または残ったもので</p><small>作らない日があっていいと思っています。1週間ぜんぶ作らなくて大丈夫です</small></div></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>土曜の買い物リスト（2人分・1週間）</h2>
+      <div class="secline"></div>
+      <div class="shop">
+        <div class="srow"><div class="slabel">お肉・魚</div><div class="sbody">鶏もも肉 2枚／豚ロース 2枚／生鮭 2切れ／鯛 2切れ</div></div>
+        <div class="srow"><div class="slabel">野菜</div><div class="sbody">きのこ 2パック／さつまいも 1本／大葉 1束／レモン 2個／玉ねぎ 2個／にんにく</div></div>
+        <div class="srow"><div class="slabel">乳製品・卵</div><div class="sbody">生クリーム 1本／バター／クリームチーズ／卵 1パック</div></div>
+        <div class="srow"><div class="slabel">そのほか</div><div class="sbody">餃子の皮／そうめん／じゃこ／粒マスタード／白ワイン（料理用でも）</div></div>
+      </div>
+      <div class="memo">
+        <b>足りないものがあっても、大丈夫</b><br>
+        鮭がなければ鱈で。豚ロースがなければ鶏ももで。<br>
+        本のレシピには「なぜその食材なのか」を書いてあります。<br>
+        理由がわかれば、ご自分で置きかえられるようになりますよ。
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">03</p>
+      <h2>土曜の30分でやること</h2>
+      <div class="secline"></div>
+      <div class="week">
+        <div class="day"><div class="badge">1</div><div><p class="t">さつまいものポタージュを作る（20分）</p><small>水曜に温めるだけで出せます。冷蔵で4日もちます</small></div></div>
+        <div class="day"><div class="badge">2</div><div><p class="t">大葉ジェノベーゼを作る（5分）</p><small>大葉とオリーブオイルとにんにくを混ぜるだけ。金曜のそうめんに使います</small></div></div>
+        <div class="day"><div class="badge">3</div><div><p class="t">鶏ももに下味をつけて冷蔵庫へ（5分）</p><small>月曜の自分が、いちばん楽になります</small></div></div>
+      </div>
+    </div>
+
+    <div class="ctabox">
+      <p class="leaf">❦</p>
+      <p>毎日作らなくていいんです。<br>1皿でもいいし、買ってきた副菜を添えてもいい。<br>
+      毎月の献立とライブレッスンは、<br>オンライン料理教室でお届けしています。</p>
+      <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+</div>
+</body>
+</html>

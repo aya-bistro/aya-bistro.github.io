@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>断面図（原寸）｜切ったら、こうなっています｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:760px;margin:0 auto;padding:36px 16px 70px}
+  .sheet{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:46px 32px 38px;box-shadow:0 10px 40px rgba(55,48,31,.08);margin-bottom:26px}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:31px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:28px auto 0;max-width:30em}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:22px;font-weight:700;margin:4px 0 4px;letter-spacing:.06em}
+  .h2sub{font-size:14.5px;color:var(--sub);margin-bottom:6px}
+  .secline{height:1px;background:var(--goldsoft);margin:12px 0 18px}
+  .sec{margin-top:42px}
+  .item{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;margin-top:14px}
+  .cut{border:1px solid #EFE7D7;border-radius:14px;padding:12px;background:#fff}
+  .cutcap{font-size:12.5px;color:#B3A894;text-align:center;margin-top:6px;letter-spacing:.06em}
+  .spec{display:grid;gap:8px}
+  .sp{display:flex;gap:12px;background:var(--creambox);border-radius:12px;padding:12px 16px;font-size:15px;line-height:1.8}
+  .sp b{color:var(--bordeaux);font-weight:700;flex:0 0 78px}
+  .why{font-size:15px;color:var(--sub);line-height:1.9;margin-top:10px}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:22px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .cuts{display:grid;gap:10px;margin-top:8px}
+  .c{display:flex;gap:14px;align-items:flex-start;background:var(--creambox);border-radius:16px;padding:16px 20px}
+  .c .n{flex:0 0 40px;height:40px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);
+    font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+  .c .t{font-size:16.5px;font-weight:700}
+  .c small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:2px}
+  .ctabox{margin-top:42px;background:var(--creambox);border-radius:20px;padding:32px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:10px}
+  .ctabox p{font-size:16px;margin-bottom:20px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:19px 42px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:28px;letter-spacing:.2em}
+  .printnote{text-align:center;font-size:14px;color:var(--sub);margin:0 0 16px}
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0;max-width:none}
+    .sheet{box-shadow:none;border-radius:0;border:none;border-top:3px solid var(--gold);
+      margin:0;padding:0 0 8mm;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}
+    .printnote,.ctabox{display:none}
+    svg{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+  @media (max-width:560px){
+    .item{grid-template-columns:1fr;gap:16px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 1枚目 -->
+  <div class="sheet">
+    <p class="eyebrow">Aya Chef — En Coupe</p>
+    <h1>断面図</h1>
+    <p class="h1sub">切ったら、こうなっています</p>
+    <div class="h1rule"></div>
+    <p class="printnote">※ A4で印刷すると、図が実物と同じ大きさになります</p>
+
+    <p class="lead">
+      料理の写真は、外側しか写らないんですよね。<br>
+      でも作っている人がいちばん知りたいのは、中がどうなっているかだと思うんです。<br>
+      だから、切ったところを実物と同じ大きさで描きました。<br>
+      印刷して横に置いて、同じ厚さに切ってみてください。同じ断面になります。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>野菜のテリーヌ</h2>
+      <p class="h2sub">第2章｜冷蔵で5日もちます</p>
+      <div class="secline"></div>
+      <div class="item">
+        <div>
+          <div class="cut">
+            <svg width="72mm" height="60mm" viewBox="0 0 216 180" role="img" aria-label="野菜のテリーヌの断面">
+              <rect x="8" y="8" width="200" height="164" rx="6" fill="#F7F3EA" stroke="#37301F" stroke-width="2"/>
+              <rect x="14" y="14" width="188" height="20" fill="#E08A3C" opacity=".85"/>
+              <rect x="14" y="34" width="188" height="16" fill="#EFE3C8"/>
+              <rect x="14" y="50" width="188" height="22" fill="#7A8471" opacity=".8"/>
+              <rect x="14" y="72" width="188" height="16" fill="#EFE3C8"/>
+              <rect x="14" y="88" width="188" height="20" fill="#C8543F" opacity=".8"/>
+              <rect x="14" y="108" width="188" height="16" fill="#EFE3C8"/>
+              <rect x="14" y="124" width="188" height="20" fill="#8FA07E" opacity=".85"/>
+              <rect x="14" y="144" width="188" height="22" fill="#EFE3C8"/>
+              <text x="112" y="178" font-size="9" fill="#B3A894" text-anchor="middle">2cm幅で切ったところ</text>
+            </svg>
+            <p class="cutcap">実物大（型の幅 8cm）</p>
+          </div>
+        </div>
+        <div>
+          <div class="spec">
+            <div class="sp"><b>切る厚さ</b>2cm。薄すぎると層が崩れます</div>
+            <div class="sp"><b>層のかず</b>色のちがう野菜を4段。あいだにゼリー寄せの層が入ります</div>
+            <div class="sp"><b>切る前に</b>完全に冷やしてから。冷蔵庫でひと晩がいちばん安心です</div>
+          </div>
+          <p class="why">
+            きれいな断面にするコツは、<b style="color:#8C5A5A">色のちがう野菜を、となりに置かないこと</b>です。<br>
+            オレンジ・白・緑・赤の順に、あいだをはさみながら重ねると、切ったときに1本ずつの線がはっきり出ます。<br>
+            同じ色をとなり合わせにすると、境目が消えてしまうんですよね。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>惣菜ガトーインビジブル</h2>
+      <p class="h2sub">第2章｜「見えない」という名前のフランス菓子の、おかず版</p>
+      <div class="secline"></div>
+      <div class="item">
+        <div>
+          <div class="cut">
+            <svg width="72mm" height="60mm" viewBox="0 0 216 180" role="img" aria-label="ガトーインビジブルの断面">
+              <rect x="8" y="8" width="200" height="164" rx="6" fill="#F3E7CE" stroke="#37301F" stroke-width="2"/>
+              <g stroke="#C8A96A" stroke-width="1.1">
+                <line x1="14" y1="22" x2="202" y2="22"/><line x1="14" y1="32" x2="202" y2="32"/>
+                <line x1="14" y1="42" x2="202" y2="42"/><line x1="14" y1="52" x2="202" y2="52"/>
+                <line x1="14" y1="62" x2="202" y2="62"/><line x1="14" y1="72" x2="202" y2="72"/>
+                <line x1="14" y1="82" x2="202" y2="82"/><line x1="14" y1="92" x2="202" y2="92"/>
+                <line x1="14" y1="102" x2="202" y2="102"/><line x1="14" y1="112" x2="202" y2="112"/>
+                <line x1="14" y1="122" x2="202" y2="122"/><line x1="14" y1="132" x2="202" y2="132"/>
+                <line x1="14" y1="142" x2="202" y2="142"/><line x1="14" y1="152" x2="202" y2="152"/>
+                <line x1="14" y1="162" x2="202" y2="162"/>
+              </g>
+              <rect x="40" y="47" width="34" height="9" fill="#8FA07E" opacity=".8"/>
+              <rect x="120" y="87" width="30" height="9" fill="#8FA07E" opacity=".8"/>
+              <rect x="70" y="127" width="36" height="9" fill="#C87F5C" opacity=".8"/>
+              <rect x="146" y="37" width="26" height="9" fill="#C87F5C" opacity=".8"/>
+              <text x="112" y="178" font-size="9" fill="#B3A894" text-anchor="middle">薄切り野菜が15枚ほど重なっています</text>
+            </svg>
+            <p class="cutcap">実物大（型の幅 8cm）</p>
+          </div>
+        </div>
+        <div>
+          <div class="spec">
+            <div class="sp"><b>切る厚さ</b>2cm</div>
+            <div class="sp"><b>野菜の厚さ</b>2mm。スライサーを使ってください</div>
+            <div class="sp"><b>焼き方</b>180℃で40〜45分</div>
+            <div class="sp"><b>切る前に</b>完全に冷ましてから。冷蔵庫で2時間以上がおすすめです</div>
+          </div>
+          <p class="why">
+            <b style="color:#8C5A5A">2mmより厚いと、この線は出ません。</b><br>
+            厚いと火が通らないうえに、卵液が行きわたらないので、切ったときに層ではなく「かたまり」に見えてしまいます。<br>
+            逆に言えば、薄く切るだけでこの断面になるんです。難しい作業はひとつもありません。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+  <!-- 2枚目 -->
+  <div class="sheet">
+    <div class="sec" style="margin-top:0">
+      <p class="secno">03</p>
+      <h2>ケークサレ</h2>
+      <p class="h2sub">第2章｜桜エビ＋枝豆＋塩昆布</p>
+      <div class="secline"></div>
+      <div class="item">
+        <div>
+          <div class="cut">
+            <svg width="72mm" height="60mm" viewBox="0 0 216 180" role="img" aria-label="ケークサレの断面">
+              <path d="M14 30 q98 -26 188 0 v136 q-94 8 -188 0 z" fill="#F0DFB8" stroke="#37301F" stroke-width="2"/>
+              <g fill="#7A8471" opacity=".85">
+                <circle cx="52" cy="64" r="6"/><circle cx="128" cy="52" r="6"/><circle cx="92" cy="104" r="6"/>
+                <circle cx="164" cy="92" r="6"/><circle cx="60" cy="132" r="6"/><circle cx="140" cy="140" r="6"/>
+              </g>
+              <g fill="#E0785C" opacity=".9">
+                <ellipse cx="86" cy="66" rx="8" ry="4"/><ellipse cx="156" cy="120" rx="8" ry="4"/>
+                <ellipse cx="40" cy="100" rx="8" ry="4"/><ellipse cx="116" cy="126" rx="8" ry="4"/>
+              </g>
+              <g fill="#5B4A33" opacity=".7">
+                <rect x="104" y="82" width="12" height="4" rx="2"/><rect x="62" y="112" width="12" height="4" rx="2"/>
+                <rect x="150" y="60" width="12" height="4" rx="2"/>
+              </g>
+              <text x="112" y="178" font-size="9" fill="#B3A894" text-anchor="middle">具は「散らばっている」のが正解です</text>
+            </svg>
+            <p class="cutcap">実物大（型の幅 8cm）</p>
+          </div>
+        </div>
+        <div>
+          <div class="spec">
+            <div class="sp"><b>切る厚さ</b>2cm</div>
+            <div class="sp"><b>焼き方</b>180℃で35〜40分</div>
+            <div class="sp"><b>切る前に</b>完全に冷めてから。温かいうちだと、ぼろぼろになります</div>
+          </div>
+          <p class="why">
+            具が下に沈んでしまう方が多いのですが、それは<b style="color:#8C5A5A">生地を混ぜすぎている</b>からなんです。<br>
+            粉っぽさが少し残るくらいでやめてください。生地に粘りがあるほうが、具を抱えたまま焼き上がります。<br>
+            上がふくらんで丸くなるのは、うまくいった証拠です。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">04</p>
+      <h2>ポテトキッシュ</h2>
+      <p class="h2sub">第2章｜パイ生地のかわりに、じゃがいもで器を作ります</p>
+      <div class="secline"></div>
+      <div class="item">
+        <div>
+          <div class="cut">
+            <svg width="86mm" height="46mm" viewBox="0 0 258 138" role="img" aria-label="ポテトキッシュの断面">
+              <path d="M12 116 q6 -96 122 -96 h112 v96 z" fill="#F6EBCE" stroke="#37301F" stroke-width="2"/>
+              <path d="M12 116 q6 -96 122 -96 h112" fill="none" stroke="#C99A52" stroke-width="7"/>
+              <ellipse cx="120" cy="66" rx="26" ry="9" fill="#C87F5C" opacity=".75"/>
+              <ellipse cx="196" cy="52" rx="22" ry="8" fill="#C87F5C" opacity=".75"/>
+              <ellipse cx="164" cy="92" rx="24" ry="8" fill="#D9B26A" opacity=".8"/>
+              <text x="60" y="132" font-size="9" fill="#B3A894">← 底と側面が「ポテトの器」（5mm）</text>
+              <text x="196" y="132" font-size="9" fill="#B3A894" text-anchor="middle">中は卵液</text>
+            </svg>
+            <p class="cutcap">実物大（20cmのフライパンで焼いたものの、くさび形1切れ）</p>
+          </div>
+        </div>
+        <div>
+          <div class="spec">
+            <div class="sp"><b>器の厚さ</b>5mm。じゃがいもを押しつけて作ります</div>
+            <div class="sp"><b>焼き方</b>フライパンで5分 → 180℃のオーブンで25〜30分</div>
+            <div class="sp"><b>切る前に</b>10分ほど冷ましてから</div>
+          </div>
+          <p class="why">
+            <b style="color:#8C5A5A">先にフライパンで底を焼くのが、いちばんの決め手です。</b><br>
+            いきなりオーブンに入れると、底が水っぽいままになります。<br>
+            5分だけ中火にかけてからオーブンへ。底はカリカリ、中はとろっとという差が生まれます。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+  <!-- 3枚目 -->
+  <div class="sheet">
+    <div class="sec" style="margin-top:0">
+      <p class="secno">05</p>
+      <h2>フラン・サレ</h2>
+      <p class="h2sub">第2章｜フランスのビストロやパン屋にある「しょっぱいプリン」</p>
+      <div class="secline"></div>
+      <div class="item">
+        <div>
+          <div class="cut">
+            <svg width="72mm" height="46mm" viewBox="0 0 216 138" role="img" aria-label="フラン・サレの断面">
+              <path d="M26 24 h164 l-16 96 h-132 z" fill="#F7E7B8" stroke="#37301F" stroke-width="2"/>
+              <path d="M26 24 h164" stroke="#D9B26A" stroke-width="6"/>
+              <g opacity=".8">
+                <ellipse cx="86" cy="60" rx="16" ry="6" fill="#7A8471"/>
+                <ellipse cx="140" cy="82" rx="14" ry="6" fill="#7A8471"/>
+                <ellipse cx="108" cy="100" rx="15" ry="6" fill="#C87F5C"/>
+                <ellipse cx="158" cy="52" rx="12" ry="5" fill="#C87F5C"/>
+              </g>
+              <text x="108" y="134" font-size="9" fill="#B3A894" text-anchor="middle">なめらかな卵の中に、具が浮かんでいます</text>
+            </svg>
+            <p class="cutcap">実物大（ココット 直径8cm）</p>
+          </div>
+        </div>
+        <div>
+          <div class="spec">
+            <div class="sp"><b>焼き方</b>170℃で30〜35分。低めの温度です</div>
+            <div class="sp"><b>できた合図</b>ゆすって、まん中が波打たなければ完成</div>
+            <div class="sp"><b>断面のコツ</b>穴があいていたら、温度が高すぎた合図です</div>
+          </div>
+          <p class="why">
+            <b style="color:#8C5A5A">泡立てないこと。</b>これだけです。<br>
+            卵液を泡立てると、その泡がそのまま穴になって残ってしまいます。プリンと同じ理屈なんですよね。<br>
+            混ぜるときは、泡を立てないようにゆっくりと。それだけで、この断面になります。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">06</p>
+      <h2>5品に共通する、切り方のこと</h2>
+      <div class="secline"></div>
+      <div class="cuts">
+        <div class="c"><div class="n">1</div><div><p class="t">完全に冷めてから切る</p><small>これがいちばん大事です。温かいうちは、まだ固まっていません。冷蔵庫で2時間以上おいてください</small></div></div>
+        <div class="c"><div class="n">2</div><div><p class="t">包丁をお湯で温める</p><small>温めた包丁は、すっと入ります。ケーキを切るのと同じですね</small></div></div>
+        <div class="c"><div class="n">3</div><div><p class="t">1切れごとに、包丁をふく</p><small>ここをさぼると、前に切った具が引きずられて断面がにごります</small></div></div>
+        <div class="c"><div class="n">4</div><div><p class="t">押さずに、引いて切る</p><small>上から押すとつぶれます。手前に引くように動かしてください</small></div></div>
+      </div>
+
+      <div class="memo">
+        <b>断面は、いちばん人に見せたくなるところです</b><br>
+        切った瞬間に層が出てくると、それだけで作ってよかったと思えますよね。<br>
+        土曜に30分だけ手をかけた自分が、報われる瞬間だと思っています。<br>
+        きれいに切れたら、ぜひ写真を撮ってみてください。
+      </div>
+
+      <div class="ctabox">
+        <p class="leaf">❦</p>
+        <p>断面がきれいに出たら、見せていただけたらうれしいです。<br>
+        盛り付けの添削や、毎月のレッスンは<br>オンライン料理教室でお届けしています。</p>
+        <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+      </div>
+
+      <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

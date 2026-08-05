@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>20分の時間の帯｜2皿が同時に出来上がる段取り｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+    --main:#B07C50; --side:#7A8471; --free:#EFE7D7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:720px;margin:0 auto;padding:36px 16px 70px}
+  .sheet{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:48px 32px 40px;box-shadow:0 10px 40px rgba(55,48,31,.08);margin-bottom:26px}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:31px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:30px auto 0;max-width:30em}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:22px;font-weight:700;margin:4px 0 4px;letter-spacing:.06em}
+  .h2sub{font-size:15px;color:var(--sub);margin-bottom:6px}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+  .sec{margin-top:48px}
+
+  .chart{display:grid;grid-template-columns:46px 1fr 1fr;gap:10px;margin-top:18px}
+  .colhead{font-size:14.5px;font-weight:700;text-align:center;padding-bottom:8px;letter-spacing:.06em}
+  .colhead.m{color:var(--main)}
+  .colhead.s{color:var(--side)}
+  .axis{position:relative;height:462px}
+  .axis span{position:absolute;right:6px;font-size:13px;color:var(--sub);transform:translateY(-50%)}
+  .track{position:relative;height:462px;background:
+    repeating-linear-gradient(to bottom,#F7F3EA 0 1px,transparent 1px 23.1px);
+    border-radius:12px;border:1px solid #F0EADD}
+  .bar{position:absolute;left:6px;right:6px;border-radius:10px;padding:8px 10px;
+    font-size:13.5px;line-height:1.65;color:#fff;font-weight:700;overflow:hidden}
+  .bar.m{background:var(--main)}
+  .bar.s{background:var(--side)}
+  .bar.free{background:var(--free);color:#8A8069;border:1px dashed #D6C9AC;font-weight:500}
+  .bar small{display:block;font-weight:500;font-size:12.5px;opacity:.92;line-height:1.6}
+
+  .legend{display:flex;gap:20px;justify-content:center;margin-top:16px;font-size:14px;color:var(--sub);flex-wrap:wrap}
+  .lg{display:flex;align-items:center;gap:7px}
+  .sw{width:22px;height:12px;border-radius:4px;display:inline-block}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:22px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:44px;background:var(--creambox);border-radius:20px;padding:32px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:10px}
+  .ctabox p{font-size:16px;margin-bottom:20px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:19px 42px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:30px;letter-spacing:.2em}
+  .printnote{text-align:center;font-size:14px;color:var(--sub);margin:0 0 18px}
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0;max-width:none}
+    .sheet{box-shadow:none;border-radius:0;border:none;border-top:3px solid var(--gold);
+      margin:0;padding:0 0 8mm;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}
+    .printnote,.ctabox{display:none}
+    .bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+  @media (max-width:520px){
+    .chart{grid-template-columns:38px 1fr 1fr;gap:6px}
+    .bar{font-size:12.5px;padding:6px 8px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="sheet">
+    <p class="eyebrow">Aya Chef — Vingt Minutes</p>
+    <h1>20分の時間の帯</h1>
+    <p class="h1sub">2皿が同時に出来上がる、そのからくり</p>
+    <div class="h1rule"></div>
+    <p class="printnote">※ 印刷して、台所に貼って使ってください（A4・3ページ）</p>
+
+    <p class="lead">
+      「20分で2皿」と聞くと、ずっと動きっぱなしのように思えますよね。<br>
+      でも実際は、逆なんです。<br>
+      焼いているあいだ、手は空いています。その空いた時間にもう1皿を作るだけ。<br>
+      その「空き」がどこにあるのかを、帯にしてみました。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>照り焼きガーリックレモンチキン</h2>
+      <p class="h2sub">＋ きのこのバター醤油ごはん（第1章）</p>
+      <div class="secline"></div>
+
+      <div class="chart">
+        <div></div>
+        <div class="colhead m">メイン｜チキン</div>
+        <div class="colhead s">もう1皿｜ごはん</div>
+
+        <div class="axis">
+          <span style="top:0">0分</span>
+          <span style="top:115px">5分</span>
+          <span style="top:231px">10分</span>
+          <span style="top:346px">15分</span>
+          <span style="top:462px">20分</span>
+        </div>
+
+        <div class="track">
+          <div class="bar m" style="top:0;height:44px">下ごしらえ<small>塩麹をふいて、片栗粉をまぶす</small></div>
+          <div class="bar m" style="top:48px;height:135px">皮目から焼く<small>触らない。ここで焼き色がつきます</small></div>
+          <div class="bar m" style="top:187px;height:88px">返して焼く → 取り出す</div>
+          <div class="bar m" style="top:279px;height:88px">同じフライパンでタレ<small>バター・醤油・みりん・パプリカパウダー</small></div>
+          <div class="bar m" style="top:371px;height:91px">タレをからめて、盛る</div>
+        </div>
+
+        <div class="track">
+          <div class="bar s" style="top:0;height:44px">炊飯器をセット<small>朝でも大丈夫です</small></div>
+          <div class="bar free" style="top:48px;height:319px">ここが空き時間<small>焼いているあいだ、手はあいています。洗い物をしても、座っていてもいいんです</small></div>
+          <div class="bar s" style="top:371px;height:91px">きのこを混ぜて、盛る</div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <div class="lg"><span class="sw" style="background:var(--main)"></span>メインの手</div>
+        <div class="lg"><span class="sw" style="background:var(--side)"></span>もう1皿の手</div>
+        <div class="lg"><span class="sw" style="background:var(--free);border:1px dashed #D6C9AC"></span>手があいている時間</div>
+      </div>
+
+      <div class="memo">
+        <b>20分のうち、14分は「待っているだけ」なんです</b><br>
+        料理が大変に感じるのは、ずっと動いていると思い込んでいるからかもしれません。<br>
+        帯にしてみると、実際に手を動かしているのは6分ほど。<br>
+        あとは、焼けるのを待っている時間です。
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet">
+    <div class="sec" style="margin-top:0">
+      <p class="secno">02</p>
+      <h2>鯛のポワレ ブールブラン</h2>
+      <p class="h2sub">＋ 大葉とじゃこのレモンごはん（第1章）</p>
+      <div class="secline"></div>
+
+      <div class="chart">
+        <div></div>
+        <div class="colhead m">メイン｜鯛</div>
+        <div class="colhead s">もう1皿｜ごはん</div>
+
+        <div class="axis">
+          <span style="top:0">0分</span>
+          <span style="top:115px">5分</span>
+          <span style="top:231px">10分</span>
+          <span style="top:346px">15分</span>
+          <span style="top:462px">20分</span>
+        </div>
+
+        <div class="track">
+          <div class="bar m" style="top:0;height:110px">鯛に塩をふる<small>魚の重さの1％。300gなら3gです</small></div>
+          <div class="bar m" style="top:114px;height:113px">皮目から焼く<small>皮をぱりっとさせたいので、動かさない</small></div>
+          <div class="bar m" style="top:231px;height:44px">返す</div>
+          <div class="bar m" style="top:279px;height:135px">ブールブランを作る<small>白ワインを煮詰めて、火を止めて冷たいバター</small></div>
+          <div class="bar m" style="top:418px;height:44px">盛る</div>
+        </div>
+
+        <div class="track">
+          <div class="bar s" style="top:0;height:44px">炊飯器はセット済み</div>
+          <div class="bar free" style="top:48px;height:366px">ここが空き時間<small>大葉を刻んでおくと、あとが楽になります。それでも10分以上あまります</small></div>
+          <div class="bar s" style="top:418px;height:44px">混ぜて、盛る</div>
+        </div>
+      </div>
+
+      <div class="memo">
+        <b>ソースは、いちばん最後でいいんです</b><br>
+        ブールブランは冷たいバターを入れて混ぜるだけなので、2分あればできます。<br>
+        先に作ると固まってしまうので、焼き終わってからで大丈夫。<br>
+        「難しそうなものほど、最後に短く」と覚えておいてください。
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet">
+    <div class="sec" style="margin-top:0">
+      <p class="secno">03</p>
+      <h2>鮭のクリーム煮</h2>
+      <p class="h2sub">＋ 餃子の皮のキッシュ（第1章・同時に作る例）</p>
+      <div class="secline"></div>
+
+      <div class="chart">
+        <div></div>
+        <div class="colhead m">メイン｜鮭</div>
+        <div class="colhead s">もう1皿｜キッシュ</div>
+
+        <div class="axis">
+          <span style="top:0">0分</span>
+          <span style="top:115px">5分</span>
+          <span style="top:231px">10分</span>
+          <span style="top:346px">15分</span>
+          <span style="top:462px">20分</span>
+        </div>
+
+        <div class="track">
+          <div class="bar m" style="top:0;height:110px">鮭に塩をふる</div>
+          <div class="bar m" style="top:114px;height:65px">焼く</div>
+          <div class="bar m" style="top:183px;height:92px">生クリームを入れる<small>沸騰させないでください。分かれてしまいます</small></div>
+          <div class="bar m" style="top:279px;height:135px">弱火のまま、そっと煮る</div>
+          <div class="bar m" style="top:418px;height:44px">盛る</div>
+        </div>
+
+        <div class="track">
+          <div class="bar s" style="top:0;height:110px">キッシュを始める<small>餃子の皮を並べて、卵液を流す</small></div>
+          <div class="bar s" style="top:114px;height:161px">弱火で焼く</div>
+          <div class="bar s" style="top:279px;height:88px">返す</div>
+          <div class="bar free" style="top:371px;height:43px">少しだけ空き</div>
+          <div class="bar s" style="top:418px;height:44px">切って、盛る</div>
+        </div>
+      </div>
+
+      <div class="memo">
+        <b>この2皿は、少しだけ急ぎます</b><br>
+        両方とも弱火なので、火加減の心配はいりません。<br>
+        ただ、空き時間がほとんどないので、慣れてからのほうが安心です。<br>
+        はじめての方は、前の2つから試してみてくださいね。
+      </div>
+
+      <div class="ctabox">
+        <p class="leaf">❦</p>
+        <p>段取りは、覚えるものではなくて<br>見えるようにするものだと思っています。<br>
+        毎月の献立とライブレッスンは、<br>オンライン料理教室でお届けしています。</p>
+        <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+      </div>
+
+      <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

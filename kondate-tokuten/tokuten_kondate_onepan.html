@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>フライパン1つの、段取り表｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.05;letter-spacing:.04em}
+  .wrap{max-width:640px;margin:0 auto;padding:40px 16px 80px}
+  .card{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:52px 30px 44px;box-shadow:0 10px 40px rgba(55,48,31,.08)}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:32px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:24px auto 0;border-radius:2px}
+  .hero{margin:34px -10px 0;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(55,48,31,.16)}
+  .hero img{width:100%;height:340px;object-fit:cover;object-position:center 55%;display:block}
+  .heronote{font-size:13.5px;color:var(--sub);text-align:center;margin-top:12px}
+  .lead{margin:34px auto 0;font-size:17px;max-width:30em}
+  .sec{margin-top:56px}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:23px;font-weight:700;margin:4px 0 8px;letter-spacing:.06em}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+  .steps{display:grid;gap:10px}
+  .step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #F0EADD;
+    border-radius:16px;padding:16px 18px;box-shadow:0 2px 10px rgba(55,48,31,.04)}
+  .step:nth-child(odd){background:var(--creambox);border-color:transparent}
+  .badge{flex:0 0 52px;height:44px;border:1px solid var(--gold);border-radius:22px;
+    color:var(--gold);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;margin-top:4px}
+  .step .t{font-size:16.5px;font-weight:700;line-height:1.85}
+  .step small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:4px;line-height:1.9}
+  .kcard{background:var(--creambox);border-radius:16px;padding:20px 22px;font-size:16px;margin-bottom:12px}
+  .kcard b{color:var(--bordeaux);font-weight:700;font-size:17px}
+  .kcard .note{font-size:15px;color:var(--sub);display:block;margin-top:4px}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:20px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:60px;background:var(--creambox);border-radius:20px;padding:34px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:12px}
+  .ctabox p{font-size:16px;margin-bottom:22px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:20px 44px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .btn:hover{opacity:.95}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:36px;letter-spacing:.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">Aya Chef — Une Seule Poêle</p>
+    <h1>フライパン1つの、<br>段取り表</h1>
+    <p class="h1sub">洗い物を増やさずに、2皿を出すために</p>
+    <div class="h1rule"></div>
+
+    <div class="hero"><img src="assets/hero_pan.jpg" alt="トマトソースの煮込み"></div>
+    <p class="heronote">お肉を焼いたフライパンに、そのままトマトを入れる。それだけでソースになります</p>
+
+    <p class="lead">
+      フライパンを2つ出すと、洗い物も2つになります。<br>
+      でも本当は、1つのままのほうがおいしくなるんです。<br>
+      お肉を焼いたあとのフライパンには、うまみが残っていますよね。<br>
+      そこに野菜を入れる。それだけで、味が移ります。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>やり方は、2つだけ</h2>
+      <div class="secline"></div>
+      <div class="kcard"><b>A｜順番に作る</b>
+        <span class="note">お肉を焼く → 取り出す → 同じフライパンで野菜を焼く。<br>
+        お肉の脂とうまみが野菜に移ります。第3章の前半がこれです。</span></div>
+      <div class="kcard"><b>B｜同時に作る</b>
+        <span class="note">クッキングシートで包んで、フライパンに並べて蓋をする。<br>
+        2〜3品が一度に仕上がります。第3章の後半がこれです。</span></div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>A｜順番に作るときの段取り</h2>
+      <div class="secline"></div>
+      <div class="steps">
+        <div class="step"><div class="badge">0分</div><div><p class="t">お肉に塩をふる</p><small>お肉の重さの1％です。300gなら3g（小さじ半分）。これで味が毎回決まります</small></div></div>
+        <div class="step"><div class="badge">3分</div><div><p class="t">フライパンで焼く</p><small>動かさないでください。焼き色は、触らない時間がつけてくれます</small></div></div>
+        <div class="step"><div class="badge">10分</div><div><p class="t">お肉を取り出して、休ませる</p><small>アルミホイルをかぶせて5分。切ったときに肉汁が流れ出なくなります</small></div></div>
+        <div class="step"><div class="badge">11分</div><div><p class="t">同じフライパンに野菜を入れる</p><small>洗わないでください。茶色くこびりついたところが、いちばんおいしいところです</small></div></div>
+        <div class="step"><div class="badge">15分</div><div><p class="t">白ワインを大さじ2、入れる</p><small>木べらで底をこそげます。こびりつきが溶けて、ソースになります</small></div></div>
+        <div class="step"><div class="badge">17分</div><div><p class="t">火を止めて、冷たいバターを入れる</p><small>10gで十分。ゆすって混ぜると、とろりとします。ここがフレンチなんです</small></div></div>
+        <div class="step"><div class="badge">20分</div><div><p class="t">お肉を切って、盛る</p><small>ソースは先にお皿に敷いて、その上にお肉を置くとお店みたいになります</small></div></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">03</p>
+      <h2>B｜包んで同時に作るときのコツ</h2>
+      <div class="secline"></div>
+      <div class="steps">
+        <div class="step"><div class="badge">1</div><div><p class="t">包みの大きさをそろえる</p><small>大きさが違うと、火の通りがばらばらになります</small></div></div>
+        <div class="step"><div class="badge">2</div><div><p class="t">野菜を下に敷いて、その上に魚やお肉</p><small>野菜が台になるので、シートにくっつきません。しかも野菜がうまみを吸います</small></div></div>
+        <div class="step"><div class="badge">3</div><div><p class="t">弱火で15分。蓋はあけない</p><small>あけると蒸気が逃げます。心配でも、15分は我慢してくださいね</small></div></div>
+        <div class="step"><div class="badge">4</div><div><p class="t">包んだまま食卓に出す</p><small>あけた瞬間の香りが、いちばんのごちそうです。盛り直すと消えてしまいます</small></div></div>
+      </div>
+      <div class="memo">
+        <b>フライパンを洗いたくなったときは</b><br>
+        「汚れているから洗わなきゃ」と思うところが、実はソースの材料なんです。<br>
+        洗ってしまうと、そのうまみは流れていってしまいます。<br>
+        手を止めて、白ワインを大さじ2だけ入れてみてください。
+      </div>
+    </div>
+
+    <div class="ctabox">
+      <p class="leaf">❦</p>
+      <p>手を抜いているのではなくて、<br>そのほうがおいしくなるから1つで作るんです。<br>
+      理由がわかる料理のレッスンは、<br>オンライン料理教室でお届けしています。</p>
+      <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>包みの型紙（パピヨット）｜あやシェフ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:720px;margin:0 auto;padding:36px 16px 70px}
+  .sheet{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:48px 34px 40px;box-shadow:0 10px 40px rgba(55,48,31,.08);margin-bottom:26px}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:31px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:30px auto 0;max-width:30em}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:22px;font-weight:700;margin:4px 0 8px;letter-spacing:.06em}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+  .sec{margin-top:46px}
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+  .st{border:1px solid #EFE7D7;border-radius:16px;padding:16px 16px 14px;background:#fff}
+  .st h3{font-size:16.5px;font-weight:700;margin-bottom:4px}
+  .st h3 span{color:var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic;margin-right:8px}
+  .st p{font-size:14.5px;color:var(--sub);line-height:1.85}
+  .legend{display:flex;gap:22px;justify-content:center;margin-top:18px;font-size:14px;color:var(--sub);flex-wrap:wrap}
+  .lg{display:flex;align-items:center;gap:8px}
+  .lgline{width:34px;height:0;border-top:2px solid var(--ink)}
+  .lgdash{width:34px;height:0;border-top:2px dashed var(--bordeaux)}
+  .katagami{border:1px solid #EFE7D7;border-radius:16px;padding:20px;background:#fff;margin-top:8px}
+  .sizecard{background:var(--creambox);border-radius:16px;padding:20px 22px;font-size:16px;margin-top:8px}
+  .sizecard b{color:var(--bordeaux);font-weight:700}
+  .miss{display:grid;gap:10px;margin-top:8px}
+  .m{display:flex;gap:14px;align-items:flex-start;background:var(--creambox);border-radius:16px;padding:16px 20px}
+  .m .n{flex:0 0 40px;height:40px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);
+    font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+  .m .t{font-size:16.5px;font-weight:700}
+  .m small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:2px}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:22px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .ctabox{margin-top:44px;background:var(--creambox);border-radius:20px;padding:32px 24px;text-align:center}
+  .ctabox .leaf{color:var(--gold);font-size:22px;margin-bottom:10px}
+  .ctabox p{font-size:16px;margin-bottom:20px}
+  .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;
+    padding:19px 42px;border-radius:999px;font-size:18px;font-weight:700;letter-spacing:.08em;
+    box-shadow:0 8px 22px rgba(140,90,90,.35)}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:30px;letter-spacing:.2em}
+  .printnote{text-align:center;font-size:14px;color:var(--sub);margin:0 0 18px}
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0;max-width:none}
+    .sheet{box-shadow:none;border-radius:0;border:none;border-top:3px solid var(--gold);
+      margin:0;padding:0 0 10mm;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}
+    .printnote,.ctabox{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 1枚目：折り方 -->
+  <div class="sheet">
+    <p class="eyebrow">Aya Chef — En Papillote</p>
+    <h1>包みの型紙</h1>
+    <p class="h1sub">開けた瞬間がいちばんおいしい、あの包み方</p>
+    <div class="h1rule"></div>
+    <p class="printnote">※ 印刷して、台所に置いて使ってください（A4）</p>
+
+    <p class="lead">
+      包み蒸しがうまくいかないとき、原因はたいてい味つけではなくて、包み方なんです。<br>
+      すき間があると、蒸気が逃げてしまうんですよね。<br>
+      折り紙と同じで、順番さえ覚えてしまえば失敗しなくなります。<br>
+      いちど手を動かせば、次からは見なくても折れますよ。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>シートの大きさ</h2>
+      <div class="secline"></div>
+      <div class="sizecard">
+        <b>1人分＝クッキングシート 30cm × 40cm</b><br>
+        市販のロール（幅30cm）を、腕をひろげた長さの半分くらい。だいたい40cmで切ってください。<br>
+        <span style="color:#7A7060;font-size:15px">※ 小さいと閉じられません。大きすぎるぶんには問題ありません</span>
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>折る順番（4つ）</h2>
+      <div class="secline"></div>
+      <div class="steps">
+
+        <div class="st">
+          <h3><span>I</span>半分に折って、開く</h3>
+          <svg viewBox="0 0 260 180" width="100%" role="img" aria-label="半分に折って開く">
+            <rect x="20" y="20" width="220" height="140" fill="#FCFAF6" stroke="#37301F" stroke-width="2"/>
+            <line x1="130" y1="20" x2="130" y2="160" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="7 5"/>
+            <text x="130" y="14" font-size="12" fill="#8C5A5A" text-anchor="middle">まん中の線</text>
+          </svg>
+          <p>いちど半分に折って、また開きます。まん中に折り目をつけるためです。</p>
+        </div>
+
+        <div class="st">
+          <h3><span>II</span>右半分に、野菜と魚をのせる</h3>
+          <svg viewBox="0 0 260 180" width="100%" role="img" aria-label="右半分に食材をのせる">
+            <rect x="20" y="20" width="220" height="140" fill="#FCFAF6" stroke="#37301F" stroke-width="2"/>
+            <line x1="130" y1="20" x2="130" y2="160" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="7 5"/>
+            <ellipse cx="185" cy="100" rx="40" ry="24" fill="#7A8471" opacity=".55"/>
+            <ellipse cx="185" cy="94" rx="30" ry="15" fill="#D9A05B"/>
+            <text x="185" y="150" font-size="12" fill="#7A7060" text-anchor="middle">野菜が下・魚が上</text>
+          </svg>
+          <p>野菜を下に敷いて、その上に魚やお肉。野菜が台になって、くっつかなくなります。</p>
+        </div>
+
+        <div class="st">
+          <h3><span>III</span>左を重ねて、ふちを2回折る</h3>
+          <svg viewBox="0 0 260 180" width="100%" role="img" aria-label="ふちを2回折る">
+            <rect x="130" y="20" width="110" height="140" fill="#FCFAF6" stroke="#37301F" stroke-width="2"/>
+            <rect x="212" y="20" width="28" height="140" fill="#F3EDE1" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="7 5"/>
+            <text x="226" y="176" font-size="11" fill="#8C5A5A" text-anchor="middle">2回折る</text>
+            <path d="M150 60 h40 M150 100 h40 M150 140 h40" stroke="#DCD3C2" stroke-width="1.5"/>
+          </svg>
+          <p>重ねたら、ふちを1cmずつ、2回折り返します。1回だと開いてきます。</p>
+        </div>
+
+        <div class="st">
+          <h3><span>IV</span>上下の角を三角に折り込む</h3>
+          <svg viewBox="0 0 260 180" width="100%" role="img" aria-label="上下の角を三角に折る">
+            <path d="M130 20 h110 v140 h-110 z" fill="#FCFAF6" stroke="#37301F" stroke-width="2"/>
+            <path d="M130 20 L180 20 L130 62 z" fill="#F3EDE1" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="6 4"/>
+            <path d="M130 160 L180 160 L130 118 z" fill="#F3EDE1" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="6 4"/>
+            <text x="200" y="95" font-size="12" fill="#7A7060" text-anchor="middle">ここは折らない</text>
+          </svg>
+          <p>上と下の角を、三角に2回ずつ折り込みます。これで四方がふさがります。</p>
+        </div>
+
+      </div>
+      <div class="legend">
+        <div class="lg"><span class="lgline"></span>シートのふち</div>
+        <div class="lg"><span class="lgdash"></span>折るところ</div>
+      </div>
+    </div>
+
+    <div class="memo">
+      <b>ふくらんだら、できあがりの合図です</b><br>
+      弱火で15分。とちゅうで蓋をあけないでくださいね。<br>
+      包みがぷくっとふくらんできたら、中で蒸気が回っているということなんです。<br>
+      心配になりますが、あけたらそこで終わってしまいます。15分だけ、待ってください。
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+  <!-- 2枚目：原寸の型紙 -->
+  <div class="sheet">
+    <p class="eyebrow">Le Gabarit</p>
+    <h1>角の折り方（原寸）</h1>
+    <p class="h1sub">この紙の上で、いちど練習してみてください</p>
+    <div class="h1rule"></div>
+
+    <p class="lead">
+      いちばん失敗するのが、最後の「角の折り込み」です。<br>
+      下の図は、実際の大きさで描いてあります。<br>
+      印刷したこの紙をそのまま折って、角度を手で覚えてしまってください。
+    </p>
+
+    <div class="katagami">
+      <svg viewBox="0 0 500 330" width="100%" role="img" aria-label="角の折り方の原寸型紙">
+        <!-- シートの角（実寸目安：1目盛=1cm相当で描画） -->
+        <path d="M40 40 h420 v250 h-420 z" fill="#FCFAF6" stroke="#37301F" stroke-width="2.5"/>
+        <!-- 1回目の折り -->
+        <path d="M40 40 L160 40 L40 148 z" fill="#F5EFE3" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="8 5"/>
+        <text x="112" y="70" font-size="14" fill="#8C5A5A">① まず、ここで折る</text>
+        <!-- 2回目の折り -->
+        <path d="M40 40 L104 40 L40 96 z" fill="#EBE2CF" stroke="#B08D46" stroke-width="2" stroke-dasharray="5 4"/>
+        <text x="150" y="112" font-size="14" fill="#B08D46">② もう一度、内側へ折る</text>
+        <!-- 反対の角 -->
+        <path d="M460 290 L340 290 L460 182 z" fill="#F5EFE3" stroke="#8C5A5A" stroke-width="2" stroke-dasharray="8 5"/>
+        <path d="M460 290 L396 290 L460 234 z" fill="#EBE2CF" stroke="#B08D46" stroke-width="2" stroke-dasharray="5 4"/>
+        <text x="250" y="272" font-size="14" fill="#7A7060" text-anchor="middle">反対の角も、同じように</text>
+        <!-- 中央の説明 -->
+        <text x="250" y="170" font-size="15" fill="#7A7060" text-anchor="middle">まん中は、食材が入るところ</text>
+        <text x="250" y="196" font-size="13" fill="#B3A894" text-anchor="middle">ふくらむので、平らに押さえないでください</text>
+      </svg>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>よくある失敗と、直し方</h2>
+      <div class="secline"></div>
+      <div class="miss">
+        <div class="m"><div class="n">1</div><div><p class="t">蒸気がもれる</p><small>ふちを1回しか折っていないことがほとんどです。2回折ると、ぴたっと止まります</small></div></div>
+        <div class="m"><div class="n">2</div><div><p class="t">シートが焦げる</p><small>火が強すぎます。弱火で大丈夫です。フライパンにシートが直接ふれる面を減らしてください</small></div></div>
+        <div class="m"><div class="n">3</div><div><p class="t">魚がシートにくっつく</p><small>野菜を下に敷いていない合図です。にんじんやズッキーニを2〜3枚、台にしてください</small></div></div>
+      </div>
+    </div>
+
+    <div class="memo">
+      <b>包んだまま、食卓に出してくださいね</b><br>
+      お皿に盛り直すと、あの香りが消えてしまいます。<br>
+      包みごとお皿にのせて、食べる人の目の前であけてもらう。<br>
+      それだけで、ふつうの平日がレストランになるんです。
+    </div>
+
+    <div class="ctabox">
+      <p class="leaf">❦</p>
+      <p>包み蒸しは、覚えると一年中つかえます。<br>
+      季節ごとの中身と、ライブレッスンは<br>オンライン料理教室でお届けしています。</p>
+      <a class="btn" href="https://mosh.jp/services/212043">Plaisirを見てみる</a>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+
+</div>
+</body>
+</html>

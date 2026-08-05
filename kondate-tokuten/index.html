@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>献立本の特典 まとめ｜ここを開けば全部わかります</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE5; --card:#FFFFFF; --ink:#37301F; --sub:#7A7060;
+    --gold:#B08D46; --goldsoft:#E7DCC3; --bordeaux:#8C5A5A; --creambox:#F8F4EC;
+    --green:#7A8471;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-size:17px;font-weight:500;line-height:2.0;letter-spacing:.04em}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 16px 80px}
+  .card{background:var(--card);border:1px solid var(--goldsoft);border-top:4px solid var(--gold);
+    border-radius:24px;padding:48px 30px 42px;box-shadow:0 10px 40px rgba(55,48,31,.08)}
+  .eyebrow{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:21px;color:var(--gold);letter-spacing:.14em;margin-bottom:12px}
+  h1{text-align:center;font-size:31px;font-weight:900;line-height:1.65;letter-spacing:.06em}
+  .h1sub{text-align:center;font-size:15px;color:var(--sub);margin-top:12px;letter-spacing:.12em}
+  .h1rule{width:44px;height:3px;background:var(--gold);margin:22px auto 0;border-radius:2px}
+  .lead{margin:28px auto 0;max-width:32em}
+  .sec{margin-top:52px}
+  .secno{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;
+    color:var(--gold);letter-spacing:.28em}
+  h2{font-size:23px;font-weight:700;margin:4px 0 8px;letter-spacing:.06em}
+  .secline{height:1px;background:var(--goldsoft);margin:14px 0 22px}
+
+  .list{display:grid;gap:12px}
+  a.row{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #F0EADD;
+    border-radius:16px;padding:18px 20px;box-shadow:0 2px 10px rgba(55,48,31,.04);
+    text-decoration:none;color:inherit;transition:.15s}
+  a.row:hover{border-color:var(--gold);box-shadow:0 6px 20px rgba(55,48,31,.1);transform:translateY(-1px)}
+  a.row:nth-child(odd){background:var(--creambox);border-color:transparent}
+  .tag{flex:0 0 76px;text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.06em;
+    border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:4px 0}
+  .tag.pdf{border-color:var(--green);color:var(--green)}
+  .tag.ai{border-color:var(--bordeaux);color:var(--bordeaux)}
+  .row .t{font-size:16.5px;font-weight:700;line-height:1.8}
+  .row small{display:block;color:var(--sub);font-size:14px;font-weight:500;margin-top:2px;line-height:1.8}
+  .arrow{margin-left:auto;color:var(--gold);font-size:20px}
+
+  .todo{display:grid;gap:12px}
+  .td{display:flex;gap:16px;align-items:flex-start;border:1px solid #EFE7D7;border-radius:16px;padding:18px 20px;background:#fff}
+  .td .box{flex:0 0 26px;height:26px;border:2px solid var(--gold);border-radius:7px;margin-top:6px}
+  .td .t{font-size:16.5px;font-weight:700;line-height:1.8}
+  .td small{display:block;color:var(--sub);font-size:14.5px;font-weight:500;margin-top:4px;line-height:1.9}
+  .td a{color:var(--bordeaux);font-weight:700}
+  .td.done{background:var(--creambox);border-color:transparent;opacity:.72}
+  .td.done .box{background:var(--gold);border-color:var(--gold);position:relative}
+  .td.done .box::after{content:"✓";color:#fff;position:absolute;inset:0;display:flex;
+    align-items:center;justify-content:center;font-size:17px;font-weight:700}
+
+  .status{background:var(--creambox);border-radius:16px;padding:22px 24px;font-size:16px;margin-top:8px}
+  .status b{color:var(--bordeaux);font-weight:700}
+  .status .line{margin-top:10px}
+  .memo{background:var(--creambox);border-radius:16px;padding:22px 24px;margin-top:20px;font-size:16px}
+  .memo b{color:var(--bordeaux);font-weight:700}
+  .links{display:grid;gap:8px;margin-top:8px}
+  .links a{color:var(--bordeaux);font-size:15.5px;font-weight:700;text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  .foot{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:15px;color:var(--sub);margin-top:36px;letter-spacing:.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <p class="eyebrow">Aya Chef — Livre des Menus</p>
+    <h1>献立本の特典 まとめ</h1>
+    <p class="h1sub">ここを開けば、できたものと、残っていることが全部わかります</p>
+    <div class="h1rule"></div>
+
+    <p class="lead">
+      KADOKAWA・橋本さんの「ビストロ献立本」の特典です。<br>
+      左の一覧をクリックすると、そのまま中身が開きます。<br>
+      印刷したいものは、開いたページで「プリント」を押すとA4になります。
+    </p>
+
+    <div class="sec">
+      <p class="secno">01</p>
+      <h2>できているもの（クリックで開きます）</h2>
+      <div class="secline"></div>
+      <div class="list">
+
+        <a class="row" href="tokuten_kondate_danmenzu.html">
+          <span class="tag">図解</span>
+          <span><span class="t">断面図（原寸・5品）</span>
+          <small>テリーヌ／ガトーインビジブル／ケークサレ／ポテトキッシュ／フラン・サレ　※前作で人気だった型</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_osara_work.html">
+          <span class="tag">ワーク</span>
+          <span><span class="t">お皿の設計図（塗り絵）</span>
+          <small>色鉛筆で塗るワークシート。塗ると、緑が足りないことに自分で気づきます</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_papillote_katagami.html">
+          <span class="tag">型紙</span>
+          <span><span class="t">包みの型紙（パピヨット）</span>
+          <small>折り方4ステップ＋角の折り込みは原寸。この紙で練習できます</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_20min_timeline.html">
+          <span class="tag">図解</span>
+          <span><span class="t">20分の時間の帯</span>
+          <small>2皿が同時に出来上がるからくり。手があいている時間が見えます</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_week.html">
+          <span class="tag pdf">PDF</span>
+          <span><span class="t">1週間の買い物リストと段取りカレンダー</span>
+          <small>第1章の章末用。土曜に1回買って、30分だけ仕込む</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_onepan.html">
+          <span class="tag pdf">PDF</span>
+          <span><span class="t">フライパン1つの、段取り表</span>
+          <small>第3章の章末用。「順番に作る」と「同時に作る」の2つのやり方</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_12sets.html">
+          <span class="tag pdf">PDF</span>
+          <span><span class="t">本に入らなかった、2皿献立12組</span>
+          <small>Amazon限定特典用。全部これまでに発信ずみのレシピです</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="GPT用_指示文_貼るだけ.txt">
+          <span class="tag ai">AI</span>
+          <span><span class="t">冷蔵庫を撮るだけ「今日の2皿、決めますAI」</span>
+          <small>ChatGPTに貼るだけの指示文。開いたら全部コピーして使ってください</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_roulette.html">
+          <span class="tag ai">押すだけ</span>
+          <span><span class="t">今日の2皿、決めます（献立ルーレット）</span>
+          <small>ボタンを押すと2皿が出ます。登録も何も要りません。AIが苦手な方の受け皿に。29組収録</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="row" href="tokuten_kondate_onsei_genkou.html">
+          <span class="tag">音声</span>
+          <span><span class="t">聴きながら作れる音声（収録原稿）</span>
+          <small>あやさんが読む原稿です。3品ぶん・間の指示つき。スマホのボイスメモで録れます</small></span>
+          <span class="arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">02</p>
+      <h2>あやさんにお願いしたいこと</h2>
+      <div class="secline"></div>
+      <div class="todo">
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">動画を2本撮る</p>
+            <small>台本は書いてあります。秒数・映像・話す言葉まで表になっているので、読みながら撮れます。<br>
+            ① 巻頭用（3分）「この本で何度も出てくる、3つの手つき」＝塩は1％／火を止めてから冷たいバター／ソースは先、料理は後<br>
+            ② 第2章章末用（2分）「テリーヌを崩さずに切る」<br>
+            → <a href="https://app.notion.com/p/3a91b1bc131b81bc9422e13e6e6c1ebd">台本を開く（Notion）</a></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">橋本さんへのメールを確認する</p>
+            <small>Gmailの下書きに入っています（「Re: ネット書店特典施策につきまして」）。<br>
+            特典3案を説明した内容です。読んで「送って」と言ってもらえれば送ります。<b>まだ送っていません。</b></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">「本文にもQRを入れたい」と橋本さんに伝える</p>
+            <small>QRの位置はデザインに関わるので、レイアウトが固まる前に言ったほうがいいです。<br>
+            上のメールに1段落足すこともできます。</small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">BGMの特典を、献立本用にする</p>
+            <small>Driveに「おうちレストランBGM.pdf」があります（01_Plaisir運営／Plaisir・スクール／入会特典）。<br>
+            タイトルを「平日の夕食のときにかけるBGM」に変えるだけで使えます。<b>新しく作る必要はありません。</b></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">音声を3品ぶん録る</p>
+            <small>原稿は書いてあります。スマホのボイスメモで十分です。間の取り方まで書いてあるので、読むだけで録れます。<br>
+            → <a href="tokuten_kondate_onsei_genkou.html">収録原稿を開く</a></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">失敗写真を6枚撮る（わざと失敗させる）</p>
+            <small>分離したクリーム／崩れたテリーヌ／黒すぎた塩麹チキン／すが入ったフラン／具が沈んだケークサレ／シートにくっついた魚。<br>
+            <b>完成写真と同じ明るさ・同じ皿で</b>撮ってください。暗く撮ると隠している感じになります。<br>
+            → <a href="https://app.notion.com/p/3a91b1bc131b81d396eeeeec02186f82">撮影指示を開く（Notion）</a></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">スーパーでの選び方を3分撮る</p>
+            <small>スマホの縦撮りでOK。魚売り場→肉売り場→野菜売り場→調味料の順。台本あります。<br>
+            ※ 店内撮影は、お店にひと声かけてからにしてください。<br>
+            → <a href="https://app.notion.com/p/3a91b1bc131b81d396eeeeec02186f82">台本を開く（Notion）</a></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">30日後に届く配信の文面を確認する</p>
+            <small>3通ぶん書いてあります。OKなら私がUTAGEに組みます（<b>送信は必ず承認後です</b>）。<br>
+            → <a href="https://app.notion.com/p/3a91b1bc131b81d396eeeeec02186f82">配信文を開く（Notion）</a></small></div>
+        </div>
+
+        <div class="td">
+          <div class="box"></div>
+          <div><p class="t">前作（週末レストラン）の特典を棚卸しする</p>
+            <small>「10個以上入れた」実績が、どこにも記録されていません。<br>
+            本をめくりながら読み上げてもらえれば、私が表にして残します。10分で終わります。</small></div>
+        </div>
+
+        <div class="td done">
+          <div class="box"></div>
+          <div><p class="t">Amazonでやるか楽天でやるか決める</p>
+            <small>7/14にAmazonで回答ずみ。申請は橋本さんが7/30までにやってくれます。<b>あやさんの手は不要です。</b></small></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">03</p>
+      <h2>いまの状況</h2>
+      <div class="secline"></div>
+      <div class="status">
+        <b>版元</b>　KADOKAWA・橋本恵子さん／「ビストロ献立本」
+        <div class="line"><b>書店</b>　Amazon（7/14に回答ずみ）</div>
+        <div class="line"><b>申請</b>　橋本さんが7/30までに実施（あやさんの手は不要）</div>
+        <div class="line"><b>データ入稿</b>　2か月ほど先（9月下旬〜10月ごろ）</div>
+        <div class="line"><b>いま止まっているところ</b>　特典内容の提案メール（下書きのまま）</div>
+      </div>
+
+      <div class="memo">
+        <b>Amazonの注意点</b><br>
+        2026年4月から運用が変わって、タイトルで【Amazon限定】と大きく謳えなくなりました。<br>
+        つまりAmazonのページ上では目立ちません。<br>
+        でも、あやさんの読者はLINEやInstagramを見て買いに行く方が中心なので、<br>
+        <b>告知はあやさん自身の発信でやるのがいちばん効きます。</b>発売の2週間前が目安です。
+      </div>
+    </div>
+
+    <div class="sec">
+      <p class="secno">04</p>
+      <h2>関連ページ（Notion）</h2>
+      <div class="secline"></div>
+      <div class="links">
+        <a href="https://app.notion.com/p/3a91b1bc131b81bc9422e13e6e6c1ebd">📍 特典の配置設計（7箇所・動画台本つき）</a>
+        <a href="https://app.notion.com/p/3a91b1bc131b815db315dfb008c7e676">🎁 Amazonダウンロード特典 3案（橋本さんへの提案）</a>
+        <a href="https://app.notion.com/p/39e1b1bc131b8189b71ff10fb81bcd48">🎁 特典ページ一覧（台帳）</a>
+        <a href="https://app.notion.com/p/3a91b1bc131b81379ddef58761aa2d7d">📚 出版パイプライン一覧（本が何本走っているか）</a>
+      </div>
+    </div>
+
+    <p class="foot">Aya Fukazawa — Cuisine de Tous les Jours</p>
+  </div>
+</div>
+</body>
+</html>
